@@ -133,6 +133,10 @@ function +vi-vcs-detect-changes() {
       vcs_visual_identifier='VCS_GIT_BITBUCKET_ICON'
     elif [[ "$remote" =~ "gitlab" ]] then
       vcs_visual_identifier='VCS_GIT_GITLAB_ICON'
+    elif [[ "$remote" =~ "edugit" ]] then
+      vcs_visual_identifier='VCS_GIT_GITLAB_ICON'
+    elif [[ "$remote" =~ "framagit" ]] then
+      vcs_visual_identifier='VCS_GIT_GITLAB_ICON'
     else
       vcs_visual_identifier='VCS_GIT_ICON'
     fi
